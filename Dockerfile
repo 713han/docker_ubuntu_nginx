@@ -12,4 +12,5 @@ RUN \
 EXPOSE 80 443
 
 CMD \
-  service nginx start
+  service nginx start && \
+tail -f /var/log/nginx/error.log
